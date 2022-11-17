@@ -47,18 +47,29 @@ h6 {
     width: 100%;
     background-image: url(steak.jpg);
     background-size: cover;
-    animation: fadeIn 5s ; 
+    animation: fadeIn 5s;
+    display: flex;
+    justify-content: center;
 
 }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-.ber1-text {
-    height: 60%;
-    width: 60%;
-    padding-top: 400px;
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ber1-text {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -69,16 +80,17 @@ h6 {
 }
 
 
-.ber1-button  {
+.ber1-button {
     height: 60px;
     width: 300px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 1px solid white;
     border-radius: 30px;
     margin-top: 70px;
     text-decoration: none;
 
 }
+
 .ber1-button-link {
     font-size: 19px;
     color: black;
@@ -96,6 +108,9 @@ h6 {
     background-color: white;
     padding-top: 100px;
     padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+
 }
 
 .ber2-hintergrund {
@@ -104,18 +119,22 @@ h6 {
     background-image: url(bar.jpg);
     background-size: cover;
     margin-top: 50px;
-       animation: fadein 1.5s ease-out normal backwards ;
-       animation-delay: 800ms;
+    animation: fadein 1.5s ease-out normal backwards;
+    animation-delay: 800ms;
+    display: flex;
+    justify-content: center;
 }
 
 
 .ber2-text {
-    height: 110%;
+    height: 105%;
     width: 42%;
     background-color: rgb(24, 24, 24);
     transform: translateY(-25px);
     padding-top: 26px;
- 
+    display: flex;
+    justify-content: center;
+
 }
 
 .ber2-text-rand {
@@ -123,6 +142,11 @@ h6 {
     width: 90%;
     border: 1px dashed grey;
     padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 
@@ -134,6 +158,7 @@ h6 {
     font-weight: 100;
     margin-top: 10px;
 }
+
 .ber2-schrift-1 {
     font-size: 17px;
     color: grey;
@@ -167,7 +192,8 @@ h6 {
     font-weight: 100;
 
 }
-.ber2-schrift-4{
+
+.ber2-schrift-4 {
     font-size: 36px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -179,6 +205,10 @@ h6 {
     height: 40%;
     width: 100%;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .ber3-text {
@@ -204,6 +234,7 @@ h6 {
     border-radius: 300px;
     border: 10px solid rgba(152, 144, 98, 0);
 }
+
 .ber3-kreis1-bild {
     height: 210px;
     width: 210px;
@@ -214,7 +245,7 @@ h6 {
     border: 10px solid rgba(152, 144, 98, 0);
     display: flex;
     justify-content: center;
-    
+
 }
 
 
@@ -228,7 +259,7 @@ h6 {
     border: 10px solid rgb(113, 106, 62);
     transition: 0.8s;
     color: white;
-   
+
 }
 
 
@@ -305,6 +336,8 @@ h6 {
     height: 70%;
     width: 100%;
     background-color: gray;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -313,6 +346,7 @@ h6 {
     padding-top: 5%;
     height: 70%;
     width: 60%;
+    display: flex;
 
 
 }
@@ -321,35 +355,42 @@ h6 {
 
 
 .ber4-schrift-1 {
-    
+
     color: grey;
     font-size: 18;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 .ber4-schrift-2 {
-   
+
     color: rgb(218, 218, 218);
     font-size: 18;
-    
+
 }
+
 .ber4-schrift-3 {
     color: rgb(152, 144, 98);
     font-size: 22;
-    
+
 }
 
 .ber4-rand {
-margin-top: 7%;
-height: 90%;
-width: 85%;
+    margin-top: 7%;
+    height: 90%;
+    width: 85%;
     border: 1px dashed grey;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .ber4-rand-2 {
     height: 35px;
     width: 200px;
     margin-top: 15px;
-   
+
     padding-top: 15px;
     border: none;
     border-top: 1px solid grey;
@@ -364,15 +405,20 @@ width: 85%;
     height: 100%;
     width: 26%;
     background-color: rgb(24, 24, 24);
-    float: left;
+    display: flex;
+    justify-content: center;
+
 }
 
 .ber4-right {
     height: 88%;
     width: 74%;
     background-color: white;
-    float: left;
     padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ber4-h2 {
@@ -386,11 +432,9 @@ width: 85%;
 
 
 }
-.ber4-book {
 
-    align-items: center;
-    justify-content: space-between;
-}
+.ber4-book {}
+
 #ber4-number {
     height: 45px;
     width: 250px;
@@ -399,22 +443,25 @@ width: 85%;
     margin-top: 20px;
     margin-right: 20px;
 }
-#ber4-date{
+
+#ber4-date {
     height: 45px;
     width: 250px;
     border: 0px;
     border-bottom: 2px solid grey;
     margin-top: 20px;
     margin-right: 20px;
-    
+
 }
+
 #ber4-time {
     height: 45px;
     width: 250px;
     border: 0px;
     border-bottom: 2px solid grey;
-    
+
 }
+
 #ber4-name {
     height: 45px;
     width: 250px;
@@ -423,6 +470,7 @@ width: 85%;
     margin-top: 20px;
     margin-right: 20px;
 }
+
 #ber4-phone {
     height: 45px;
     width: 250px;
@@ -431,12 +479,14 @@ width: 85%;
     margin-top: 20px;
     margin-right: 20px;
 }
+
 #ber4-email {
     height: 45px;
     width: 250px;
     border: 0px;
     border-bottom: 2px solid grey;
 }
+
 .ber4-button {
     height: 50px;
     width: 180px;
@@ -459,6 +509,7 @@ width: 85%;
     width: 100%;
     background-color: white;
     padding-top: 100px;
+
 }
 
 /* Schrifteeennnn */
@@ -486,20 +537,21 @@ width: 85%;
     letter-spacing: 0.9px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
-    
+
 }
 
 .datum-schrift-1 {
     font-size: 44px;
     color: white;
     margin-bottom: 0;
-    
+
 }
-.datum-schrift-2{
+
+.datum-schrift-2 {
     font-size: 19px;
     color: white;
     margin-top: -8;
-    
+
 }
 
 .ber5-logo {
@@ -539,10 +591,13 @@ width: 85%;
     height: 100px;
     width: 100px;
     background-color: black;
-        
+
     margin: auto;
     color: white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ber5-bei1-bild {
@@ -550,11 +605,15 @@ width: 85%;
     width: 40%;
     background-color: green;
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ber5-bei1-text {
     padding-top: 50px;
-    margin-left: 290px ;
+    margin-left: 290px;
 }
 
 /* Beitrag Nr 2*/
@@ -563,6 +622,7 @@ width: 85%;
     height: 50%;
     width: 100%;
     background-color: white;
+
 }
 
 .ber5-bei2-date {
@@ -571,7 +631,10 @@ width: 85%;
     background-color: black;
     margin: auto;
     color: white;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ber5-bei2-bild {
@@ -579,18 +642,22 @@ width: 85%;
     width: 40%;
     background-color: green;
     float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .ber5-bei2-text {
     padding-top: 50px;
-    margin-left: 290px ;
+    margin-left: 290px;
 }
 
 /* Rechte seite */
 .ber5-right-hintergrund {
 
-    height: 100%;   
+    height: 100%;
     width: 40%;
     background-image: url(bar.jpg);
     float: right;
@@ -601,159 +668,152 @@ width: 85%;
     width: 90%;
     background-color: white;
     margin: 20px;
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .ber5-right3 {
     height: 100px;
     width: 100px;
     background-color: black;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
 .ber5-bei3-text {
     padding-top: 50px;
-  
+
 }
 
-/* berreich 6*/
+/*------------------------------------------------------------------------ berreich 6*/
+
 
 #ber6 {
-    height: 70%;
+    height: auto;
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding-top: 50px;
-}
-
-.ber6-all {
-    height: 80%;
-    width: 100%;
 
 }
+
+.ber6-schrift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+
+.ber6-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ber6-flex2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 
 .ber6-bild1 {
-    height: 55%;
     width: 21%;
+    height: 250px;
     background-image: url(nachtisch.jpg);
     background-size: cover;
-    float: left;
-    margin-bottom: 25px;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild1:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
+
 
 .ber6-bild2 {
-    height: 55%;
     width: 27%;
+    height: 250px;
     background-image: url(wein.jpg);
     background-size: cover;
-    float: left;
-    margin-left: 30px;
-    margin-bottom: 25px;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild2:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
+
 
 .ber6-bild3 {
-    height: 55%;
     width: 27%;
+    height: 250px;
     background-color: blue;
-    float: left;
-    margin-left: 29px;
-    margin-right: 30px;
-    margin-bottom: 25px;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild3:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
+
 
 .ber6-bild4 {
-    height: 55%;
     width: 21%;
+    height: 250px;
     background-color: rgb(110, 110, 62);
-    float: left;
-    margin-bottom: 25px;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild4:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
 
 .ber6-bild5 {
-    height: 55%;
     width: 21%;
+    height: 250px;
     background-color: pink;
-    float: left;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild5:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
 
 .ber6-bild6 {
-    height: 55%;
     width: 27%;
+    height: 250px;
     background-color: purple;
-    float: left;
-    margin-left: 30px;
-    transition: ease-out 0.5s;
+
 
 }
 
-.ber6-bild6:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
 
 .ber6-bild7 {
-    height: 55%;
     width: 27%;
+    height: 250px;
     background-image: url(nachtisch.jpg);
     background-size: cover;
-    float: left;
-    margin-left: 29px;
-    margin-right: 30px;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild7:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
+
 
 .ber6-bild8 {
-    height: 55%;
     width: 21%;
+    height: 250px;
     background-color: rgb(109, 72, 72);
-    float: left;
-    transition: ease-out 0.5s;
+
 }
 
-.ber6-bild8:hover {
-    background-color: grey;
-    transition: 0.5s;
-}
-
-#ber7 {
-    height: 50%;
+.ber6-button {
+    height: 80px;
     width: 100%;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#ber7 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+
 }
 
 .ber7-button {
@@ -764,37 +824,35 @@ width: 85%;
     border: 2px solid black;
     border-radius: 300px;
     float: left;
-    margin-left: 34px;
-    margin-top: 60px;
 }
 
 .ber7-bild {
-    height: 90%;
-    width: 20%;
+    height: 100%;
+    width: 25%;
     background-image: url(koch.jpg);
-    float: left;
-    margin-left: 24%;
     background-size: cover;
-    margin-top: 26px;
+
 }
 
 .ber7-text {
     height: 40%;
     width: 30%;
     background-color: white;
-    float: left;
     margin-top: 200px;
-    box-shadow: 2px 2px 2px 2px  rgb(92, 92, 92);
-    transform: translateX(-300px);
-   
-
+    box-shadow: 2px 2px 2px 2px rgb(92, 92, 92);
+    transform: translateX(-40px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 #ber8 {
-    height: 50%;
+    height: 100%;
     width: 100%;
+
 }
 
 .karte {
@@ -848,19 +906,21 @@ width: 85%;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
     border-left: 1px solid grey;
-    border-right: none;
-float: left;
-padding-left: 10px;
+    
+    
+    float: left;
+    padding-left: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgba(255, 0, 0, 0);
-    
+    border-radius: 0.6vh;
 }
+
 .ber9-email::placeholder {
     color: grey;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;  
-   
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .send {
@@ -868,7 +928,7 @@ padding-left: 10px;
     width: 30px;
     color: grey;
     float: left;
-    margin-top: 20px; 
+    margin-top: 20px;
     border-bottom: 1px solid grey;
     border-top: 1px solid grey;
     border-right: 1px solid grey;
@@ -894,7 +954,7 @@ header {
     opacity: 1.0;
     display: flex;
     justify-content: space-around;
-align-items: center;
+    align-items: center;
 }
 
 .nav-links {
@@ -911,7 +971,7 @@ li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 29px;
     opacity: 1.0;
-   font-weight: 600;
+    font-weight: 600;
 
 }
 
@@ -926,7 +986,7 @@ li {
     color: white;
     text-decoration: none;
     letter-spacing: 1px;
-   
+
     transition: 1.3s ease-out;
     opacity: 1.0;
 
@@ -948,16 +1008,17 @@ li {
     width: 500px;
     background-color: white;
     position: absolute;
-    
+
     left: 0;
     right: 0;
     margin: auto;
     padding: 10px 50px;
-    display:  none;                    ;
+    display: none;
+    ;
     flex-direction: column;
     box-shadow: 1px 11px 20px -3px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 1px 11px 20px -3px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 1px 11px 20px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 11px 20px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 11px 20px -3px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -965,14 +1026,16 @@ li {
 
 .book-title {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     color: rgb(139, 139, 139);
 
 }
-label  {
+
+label {
     font-size: 14px;
     font-weight: 300;
 }
+
 .book-Input {
     padding: 10px;
     margin: 10px 0px;
@@ -980,18 +1043,22 @@ label  {
     border-bottom: 1px solid grey;
     font-weight: 100;
 }
-.book-Input::placeholder{
-  color: rgb(167, 167, 167);
+
+.book-Input::placeholder {
+    color: rgb(167, 167, 167);
 }
+
 .book-time {
     height: 100px;
-    
+
 }
+
 .book-button {
     position: relative;
     height: 40px;
     bottom: -90;
 }
+
 .close {
     height: 20px;
     width: 20px;
@@ -1005,26 +1072,33 @@ label  {
     justify-content: center;
     cursor: pointer;
     padding: 2px;
-    
+
 }
 
 @keyframes fadein {
     0% {
         margin-top: -120px;
-        opacity: 0;}
-        20% {
-            margin-top: -120px;
-            opacity: 0.0;}
-            50% {
-                margin-top: -120px;
-                opacity: 0.0;}
-                      
+        opacity: 0;
+    }
+
+    20% {
+        margin-top: -120px;
+        opacity: 0.0;
+    }
+
+    50% {
+        margin-top: -120px;
+        opacity: 0.0;
+    }
+
     80% {
         opacity: 0.4;
     }
-    100% { 
+
+    100% {
         margin-bottom: 0px;
-        opacity: 1;}
+        opacity: 1;
+    }
 }
 
-
+@media(max-width: 850px) {}
